@@ -13,4 +13,4 @@ if __name__ == "__main__":
   ║   WebSocket enabled — live data ready    ║
   ╚══════════════════════════════════════════╝
 """)
-    socketio.run(app, host=Config.HOST, port=Config.PORT, debug=Config.DEBUG)
+    socketio.run(app, host=Config.HOST, port=Config.PORT, debug=Config.DEBUG, allow_unsafe_werkzeug=True)

@@ -14,7 +14,7 @@
 // ── Connection ────────────────────────────────────────────────────────────────
 // When running from Flask's static serve the backend is on the same origin.
 // For standalone HTML dev (e.g. Live Server), point to http://localhost:5000
-const BACKEND_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+const BACKEND_URL = 'https://ev-telemetry-dashboard.onrender.com/'
   ? `${window.location.protocol}//${window.location.hostname}:5000`
   : window.location.origin;
 
